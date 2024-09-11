@@ -43,7 +43,7 @@ importers:
         version: 4.28.1
       nestjs-redox:
         specifier: ^1.2.1
-        version: 1.2.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@7.4.0(@fastify/static@7.0.4)(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2))
+        version: 1.2.2(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@7.4.0(@fastify/static@7.0.4)(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2))
       redoc:
         specifier: ^2.1.5
         version: 2.1.5(core-js@3.38.1)(enzyme@3.11.0)(mobx@6.13.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -1851,8 +1851,8 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  nestjs-redox@1.2.1:
-    resolution: {integrity: sha512-4faP+3d2p0osRnemn+0rfGE0WL8/i9vLBcTShFtNDM4QS6fUGzN3gNxhwO4Q34AoqyUEJH+gZmIsQMDxw4eSEQ==}
+  nestjs-redox@1.2.2:
+    resolution: {integrity: sha512-MGn+R1RVyHIpnyzfjU05UbZBzut9JqftCPhwRfePnQhAEHp33cM+wAWQ5cIHcYAQanWBjKCFmjPaai8wFdWVWA==}
     peerDependencies:
       '@nestjs/common': ^10.0.0
       '@nestjs/swagger': ^7.3.0
@@ -4737,7 +4737,7 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  nestjs-redox@1.2.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@7.4.0(@fastify/static@7.0.4)(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)):
+  nestjs-redox@1.2.2(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@7.4.0(@fastify/static@7.0.4)(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)):
     dependencies:
       '@fastify/basic-auth': 5.1.1
       '@nestjs/common': 10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1)
