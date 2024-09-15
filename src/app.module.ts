@@ -5,6 +5,7 @@ import { CacheModule } from '@nestjs/cache-manager';
 import { redisStore } from 'cache-manager-redis-yet';
 
 import { AppController } from './app.controller';
+import { MemberModule } from './member/member.module';
 
 @Module({
   imports: [
@@ -22,7 +23,7 @@ import { AppController } from './app.controller';
       : CacheModule.register({
           isGlobal: true,
         }),
-    AppModule,
+    MemberModule,
   ],
   controllers: [AppController],
 })
