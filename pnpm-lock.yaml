@@ -39,8 +39,8 @@ importers:
         specifier: ^5.1.4
         version: 5.1.4
       fastify:
-        specifier: ^4.28.1
-        version: 4.28.1
+        specifier: ^5.0.0
+        version: 5.0.0
       nestjs-redox:
         specifier: ^1.2.1
         version: 1.2.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/swagger@7.4.0(@fastify/static@7.0.4)(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(@nestjs/core@10.4.1(@nestjs/common@10.4.1(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2)(rxjs@7.8.1))(reflect-metadata@0.2.2))
@@ -189,6 +189,9 @@ packages:
   '@fastify/ajv-compiler@3.6.0':
     resolution: {integrity: sha512-LwdXQJjmMD+GwLOkP7TVC68qa+pSSogeWWmznRJ/coyTcfe9qA05AHFSe1eZFwK6q+xVRpChnvFUkf1iYaSZsQ==}
 
+  '@fastify/ajv-compiler@4.0.1':
+    resolution: {integrity: sha512-DxrBdgsjNLP0YM6W5Hd6/Fmj43S8zMKiFJYgi+Ri3htTGAowPVG/tG1wpnWLMjufEnehRivUCKZ1pLDIoZdTuw==}
+
   '@fastify/basic-auth@5.1.1':
     resolution: {integrity: sha512-L4b7EK5LKZnV6fdH1+rQbjhkKGXjCfiKJ0JkdGHZQPBMHMiXDZF8xbZsCakWGf9c7jDXJicP3FPcIXUPBkuSeQ==}
 
@@ -198,8 +201,14 @@ packages:
   '@fastify/error@3.4.1':
     resolution: {integrity: sha512-wWSvph+29GR783IhmvdwWnN4bUxTD01Vm5Xad4i7i1VuAOItLvbPAb69sb0IQ2N57yprvhNIwAP5B6xfKTmjmQ==}
 
+  '@fastify/error@4.0.0':
+    resolution: {integrity: sha512-OO/SA8As24JtT1usTUTKgGH7uLvhfwZPwlptRi2Dp5P4KKmJI3gvsZ8MIHnNwDs4sLf/aai5LzTyl66xr7qMxA==}
+
   '@fastify/fast-json-stringify-compiler@4.3.0':
     resolution: {integrity: sha512-aZAXGYo6m22Fk1zZzEUKBvut/CIIQe/BapEORnxiD5Qr0kPHqqI69NtEMCme74h+at72sPhbkb4ZrLd1W3KRLA==}
+
+  '@fastify/fast-json-stringify-compiler@5.0.1':
+    resolution: {integrity: sha512-f2d3JExJgFE3UbdFcpPwqNUEoHWmt8pAKf8f+9YuLESdefA0WgqxeT6DrGL4Yrf/9ihXNSKOqpjEmurV405meA==}
 
   '@fastify/formbody@7.4.0':
     resolution: {integrity: sha512-H3C6h1GN56/SMrZS8N2vCT2cZr7mIHzBHzOBa5OPpjfB/D6FzP9mMpE02ZzrFX0ANeh0BAJdoXKOF2e7IbV+Og==}
@@ -718,6 +727,9 @@ packages:
   avvio@8.4.0:
     resolution: {integrity: sha512-CDSwaxINFy59iNwhYnkvALBwZiTydGkOecZyPkqBpABYR1KqGEsET0VOOYDwtleZSUIdeY36DC2bSZ24CO1igA==}
 
+  avvio@9.1.0:
+    resolution: {integrity: sha512-fYASnYi600CsH/j9EQov7lECAniYiBFiiAtBNuZYLA2leLe9qOvZzqYHFjtIj6gD2VMoMLP14834LFWvr4IfDw==}
+
   axios@1.7.7:
     resolution: {integrity: sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==}
 
@@ -768,6 +780,7 @@ packages:
   cache-manager-redis-yet@5.1.4:
     resolution: {integrity: sha512-2mXZjo+txfH2m+mSTHTITNq8c5SssU2nP7NutzrocO3Mw/SbjHcDo+mriI3ZuR63ov/oUUIaF9iF+MzDqVzMoQ==}
     engines: {node: '>= 18'}
+    deprecated: With cache-manager v6 we now are using Keyv
 
   cache-manager@5.7.6:
     resolution: {integrity: sha512-wBxnBHjDxF1RXpHCBD6HGvKER003Ts7IIm0CHpggliHzN1RZditb7rXoduE1rplc2DEFYKxhLKgFuchXMJje9w==}
@@ -902,6 +915,10 @@ packages:
 
   cookie@0.6.0:
     resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
+    engines: {node: '>= 0.6'}
+
+  cookie@0.7.2:
+    resolution: {integrity: sha512-yki5XnKuf750l50uGTllt6kKILY4nQ1eNIQatoXEByZ5dWgnKqbnqmTrBE5B4N7lrMJKQ2ytWMiTO2o0v6Ew/w==}
     engines: {node: '>= 0.6'}
 
   core-js@3.38.1:
@@ -1159,6 +1176,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -1230,6 +1248,9 @@ packages:
   fast-json-stringify@5.16.1:
     resolution: {integrity: sha512-KAdnLvy1yu/XrRtP+LJnxbBGrhN+xXu+gt3EUvZhYGKCr3lFHq/7UFJHHFgmJKoqlh6B40bZLEv7w46B0mqn1g==}
 
+  fast-json-stringify@6.0.0:
+    resolution: {integrity: sha512-FGMKZwniMTgZh7zQp9b6XnBVxUmKVahQLQeRQHqwYmPDqDhcEKZ3BaQsxelFFI5PY7nN71OEeiL47/zUWcYe1A==}
+
   fast-levenshtein@2.0.6:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
 
@@ -1255,6 +1276,9 @@ packages:
   fastify@4.28.1:
     resolution: {integrity: sha512-kFWUtpNr4i7t5vY2EJPCN2KgMVpuqfU4NjnJNCgiNB900oiDeYqaNDRcAfeBbOF5hGixixxcKnOU4KN9z6QncQ==}
 
+  fastify@5.0.0:
+    resolution: {integrity: sha512-Qe4dU+zGOzg7vXjw4EvcuyIbNnMwTmcuOhlOrOJsgwzvjEZmsM/IeHulgJk+r46STjdJS/ZJbxO8N70ODXDMEQ==}
+
   fastq@1.17.1:
     resolution: {integrity: sha512-sRVD3lWVIXWg6By68ZN7vho9a1pQcN/WBFaAAsDDFzlJjvoGx0P8z7V1t72grFJfJhu3YPZBuu25f7Kaw2jN1w==}
 
@@ -1272,6 +1296,10 @@ packages:
 
   find-my-way@8.2.0:
     resolution: {integrity: sha512-HdWXgFYc6b1BJcOBDBwjqWuHJj1WYiqrxSh25qtU4DabpMFdj/gSunNBQb83t+8Zt67D7CXEzJWTkxaShMTMOA==}
+    engines: {node: '>=14'}
+
+  find-my-way@9.1.0:
+    resolution: {integrity: sha512-Y5jIsuYR4BwWDYYQ2A/RWWE6gD8a0FMgtU+HOq1WKku+Cwdz8M1v8wcAmRXXM1/iqtoqg06v+LjAxMYbCjViMw==}
     engines: {node: '>=14'}
 
   find-up@5.0.0:
@@ -1675,6 +1703,9 @@ packages:
 
   light-my-request@5.13.0:
     resolution: {integrity: sha512-9IjUN9ZyCS9pTG+KqTDEQo68Sui2lHsYBrfMyVUTTZ3XhH8PMZq7xO94Kr+eP9dhi/kcKsx4N41p2IXEBil1pQ==}
+
+  light-my-request@6.1.0:
+    resolution: {integrity: sha512-+NFuhlOGoEwxeQfJ/pobkVFxcnKyDtiX847hLjuB/IzBxIl3q4VJeFI8uRCgb3AlTWL1lgOr+u5+8QdUcr33ng==}
 
   lines-and-columns@1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
@@ -2224,6 +2255,10 @@ packages:
     resolution: {integrity: sha512-0f4Memo5QP7WQyUEAYUO3esD/XjOc3Zjjg5CPsAq1p8sIu0XPeMbHJemKA0BO7tV0X7+A0FoEpbmHXWxPyD3wQ==}
     engines: {node: '>=10'}
 
+  ret@0.5.0:
+    resolution: {integrity: sha512-I1XxrZSQ+oErkRR4jYbAyEEu2I0avBvvMM5JN+6EBprOGRCs63ENqZ3vjavq8fBw2+62G5LF5XelKwuJpcvcxw==}
+    engines: {node: '>=10'}
+
   reusify@1.0.4:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
@@ -2269,6 +2304,9 @@ packages:
 
   safe-regex2@3.1.0:
     resolution: {integrity: sha512-RAAZAGbap2kBfbVhvmnTFv73NWLMvDGOITFYTZBAaY8eR+Ir4ef7Up/e7amo+y1+AH+3PtLkrt9mvcTsG9LXug==}
+
+  safe-regex2@4.0.0:
+    resolution: {integrity: sha512-Hvjfv25jPDVr3U+4LDzBuZPPOymELG3PYcSk5hcevooo1yxxamQL/bHs/GrEPGmMoMEwRrHVGiCA1pXi97B8Ew==}
 
   safe-stable-stringify@2.5.0:
     resolution: {integrity: sha512-b3rppTKm9T+PsVCBEOUR46GWI7fdOs00VKZ1+9c1EWDaDMvjQc6tUwuFyIprgGgTcWoVHSKrU8H31ZHA2e0RHA==}
@@ -2863,6 +2901,12 @@ snapshots:
       ajv-formats: 2.1.1(ajv@8.17.1)
       fast-uri: 2.4.0
 
+  '@fastify/ajv-compiler@4.0.1':
+    dependencies:
+      ajv: 8.17.1
+      ajv-formats: 3.0.1(ajv@8.17.1)
+      fast-uri: 3.0.1
+
   '@fastify/basic-auth@5.1.1':
     dependencies:
       '@fastify/error': 3.4.1
@@ -2875,9 +2919,15 @@ snapshots:
 
   '@fastify/error@3.4.1': {}
 
+  '@fastify/error@4.0.0': {}
+
   '@fastify/fast-json-stringify-compiler@4.3.0':
     dependencies:
       fast-json-stringify: 5.16.1
+
+  '@fastify/fast-json-stringify-compiler@5.0.1':
+    dependencies:
+      fast-json-stringify: 6.0.0
 
   '@fastify/formbody@7.4.0':
     dependencies:
@@ -3493,6 +3543,11 @@ snapshots:
       '@fastify/error': 3.4.1
       fastq: 1.17.1
 
+  avvio@9.1.0:
+    dependencies:
+      '@fastify/error': 4.0.0
+      fastq: 1.17.1
+
   axios@1.7.7:
     dependencies:
       follow-redirects: 1.15.6
@@ -3706,6 +3761,8 @@ snapshots:
       safe-buffer: 5.2.1
 
   cookie@0.6.0: {}
+
+  cookie@0.7.2: {}
 
   core-js@3.38.1: {}
 
@@ -4115,6 +4172,16 @@ snapshots:
       json-schema-ref-resolver: 1.0.1
       rfdc: 1.4.1
 
+  fast-json-stringify@6.0.0:
+    dependencies:
+      '@fastify/merge-json-schemas': 0.1.1
+      ajv: 8.17.1
+      ajv-formats: 3.0.1(ajv@8.17.1)
+      fast-deep-equal: 3.1.3
+      fast-uri: 2.4.0
+      json-schema-ref-resolver: 1.0.1
+      rfdc: 1.4.1
+
   fast-levenshtein@2.0.6: {}
 
   fast-querystring@1.1.2:
@@ -4150,6 +4217,24 @@ snapshots:
       semver: 7.6.3
       toad-cache: 3.7.0
 
+  fastify@5.0.0:
+    dependencies:
+      '@fastify/ajv-compiler': 4.0.1
+      '@fastify/error': 4.0.0
+      '@fastify/fast-json-stringify-compiler': 5.0.1
+      abstract-logging: 2.0.1
+      avvio: 9.1.0
+      fast-json-stringify: 6.0.0
+      find-my-way: 9.1.0
+      light-my-request: 6.1.0
+      pino: 9.4.0
+      process-warning: 4.0.0
+      proxy-addr: 2.0.7
+      rfdc: 1.4.1
+      secure-json-parse: 2.7.0
+      semver: 7.6.3
+      toad-cache: 3.7.0
+
   fastq@1.17.1:
     dependencies:
       reusify: 1.0.4
@@ -4171,6 +4256,12 @@ snapshots:
       fast-deep-equal: 3.1.3
       fast-querystring: 1.1.2
       safe-regex2: 3.1.0
+
+  find-my-way@9.1.0:
+    dependencies:
+      fast-deep-equal: 3.1.3
+      fast-querystring: 1.1.2
+      safe-regex2: 4.0.0
 
   find-up@5.0.0:
     dependencies:
@@ -4603,6 +4694,12 @@ snapshots:
     dependencies:
       cookie: 0.6.0
       process-warning: 3.0.0
+      set-cookie-parser: 2.7.0
+
+  light-my-request@6.1.0:
+    dependencies:
+      cookie: 0.7.2
+      process-warning: 4.0.0
       set-cookie-parser: 2.7.0
 
   lines-and-columns@1.2.4: {}
@@ -5144,6 +5241,8 @@ snapshots:
 
   ret@0.4.3: {}
 
+  ret@0.5.0: {}
+
   reusify@1.0.4: {}
 
   rfdc@1.4.1: {}
@@ -5189,6 +5288,10 @@ snapshots:
   safe-regex2@3.1.0:
     dependencies:
       ret: 0.4.3
+
+  safe-regex2@4.0.0:
+    dependencies:
+      ret: 0.5.0
 
   safe-stable-stringify@2.5.0: {}
 
